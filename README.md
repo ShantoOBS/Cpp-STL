@@ -16,7 +16,7 @@ priority_queue< pair<int, int>, vector<pair<int, int>>, greater<pair<int, int>> 
 priority_queue< pair<int, int>, vector<pair<int, int>>, greater<> > pq;               //min_heap of pairs
 ```
 ```c++
-2. Using user defined comparator as a structure
+2. Using user defined comparator as a structure (Functor - Function Object)
 
 struct comp {
     bool operator()(int &a, int &b) {
