@@ -420,3 +420,64 @@ Example :
 	Leetcode - : Find the Difference of Two Arrays
     
 ```
+
+
+
+
+### :memo: std::Find character in string :
+```c++
+
+Find character in string from the end
+Searches the string for the last character that matches any of the characters specified in its arguments.
+
+When pos is specified, the search only includes characters at or before position pos, ignoring any possible occurrences after pos.
+
+Parameters
+str
+Another string with the characters to search for.
+pos
+Position of the last character in the string to be considered in the search.
+Any value greater than, or equal to, the string length (including string::npos) means that the entire string is searched.
+Note: The first character is denoted by a value of 0 (not 1).
+s
+Pointer to an array of characters.
+If argument n is specified (3), the first n characters in the array are searched for.
+Otherwise (2), a null-terminated sequence is expected: the length of the sequence with the characters to match is determined by the first occurrence of a null character.
+n
+Number of character values to search for.
+c
+Individual character to be searched for.
+
+size_t is an unsigned integral type (the same as member type string::size_type).
+
+Return Value
+The position of the last character that matches.
+If no matches are found, the function returns string::npos.
+
+size_t is an unsigned integral type (the same as member type string::size_type).
+
+
+Complexity
+Unspecified, but generally up to linear in the string length (or pos) times the number of characters to match (worst case).
+
+Iterator validity
+No changes.
+
+Data races
+The object is accessed.
+
+Exception safety
+If s does not point to an array long enough, it causes undefined behavior.
+Otherwise, the function never throws exceptions (no-throw guarantee).
+
+See also
+
+string::find	Find content in string (public member function)
+string::rfind	Find last occurrence of content in string (public member function)
+string::find_first_of	Find character in string of first char (public member function)
+string::find_last_of	Find character in string of last char (public member function)
+string::find_last_not_of	Find non-matching character in string from the end (public member function)
+string::replace	Replace portion of string (public member function)
+string::substr	Generate substring (public member function)
+
+```
