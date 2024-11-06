@@ -481,3 +481,11 @@ string::replace	Replace portion of string (public member function)
 string::substr	Generate substring (public member function)
 
 ```
+
+
+### :memo: Count set bit:
+```c++
+ __builtin_popcount(int number);
+__builtin_popcountll(long long number); 
+    
+```
