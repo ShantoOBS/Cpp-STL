@@ -489,3 +489,11 @@ string::substr	Generate substring (public member function)
 __builtin_popcountll(long long number); 
     
 ```
+
+### :memo: Next and Prev Permutation:
+```c++
+Syntax
+std::prev_permutataion(first, last)   // T.C : O(n)
+std::next_permutation(first, last);  // T.C : O(n)
+    
+```
