@@ -1,3 +1,12 @@
+- Set
+```c++
+set<int>st; O(log(n))   use for when you need to sort order unique key value 
+unordered_set<int> unordered_set1 = {1, 100, 2, 9}; O(1)         use for when you never need to order     
+multiset<int, greater<int>> my_multiset = {5, 3, 8, 1, 3}; // output : 8 5 3 3 1 
+         
+```
+<br>
+
 ### :memo:Different ways of using priority_queue (i.e. heap) :mount_fuji:
 
 - Default declarations
