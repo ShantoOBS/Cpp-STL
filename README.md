@@ -1,8 +1,31 @@
-- Set
+### All the Map
 ```c++
-set<int>st; O(log(n))   use for when you need to sort order unique key value 
-unordered_set<int> unordered_set1 = {1, 100, 2, 9}; O(1)         use for when you never need to order     
-multiset<int, greater<int>> my_multiset = {5, 3, 8, 1, 3}; // output : 8 5 3 3 1 
+map<int,int>mp; use for when you need to order. insert and access time complexity is O(log(n)) .Inbuilt implementation Red Black Tree
+erase()	removes an element or range of elements from the map its input two type iterator or key and its time complexity is O(log(n)).
+find() for find the value in map its time complexity is O(log(n)).
+
+unordered_map<int,int> mp; use for when you never need to order. insert and access time complexity is O(1). Inbuilt implementation Hash value.
+erase()	removes an element or range of elements from the map its input two type iterator and key  and time complexity is O(1))
+find() for find the value in map its time complexity is O(1)).
+in unorder_map we can not useing complax data type.
+
+multimap<int, int> mp; use for when you need to order or multiple key values. insert and access time complexity is O(log(n)) .
+```
+<br>
+
+### All the set
+```c++
+set<int>st; use for when you need to sort order unique key value. insert and access time complexity is O(log(n)).
+erase()	removes an element or range of elements from the set its input two type datatype or iterator and its time complexity is O(log(n)).
+find() for find the value in set its time complexity is O(log(n)).
+
+unordered_set<int> unordered_set1 = {1, 100, 2, 9};    use for when you never need to order. insert and access time complexity is O(1).
+erase()	removes an element or range of elements from the set its input two type datatype or iterator and its time complexity is O(1).
+find() for find the value in set its time complexity is O(1).
+
+
+multiset<int, greater<int>> my_multiset = {5, 3, 8, 1, 3}; // output : 8 5 3 3 1  use for when you need to sort order and multiple values. inseart and access time complexity is o(log(n)).
+same as normal set.
          
 ```
 <br>
