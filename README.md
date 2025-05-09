@@ -216,6 +216,49 @@ Example : My Calendar I (Leetcode - 729) -
 
 ### :memo: std::rotate 🌀
 ```c++
+
+🔄 What is std::rotate?
+std::rotate(begin, middle, end);
+This rearranges the elements in the range [begin, end) so that
+ the element at middle becomes the first element of the new range.
+The elements before middle are moved to the end (after rotating).
+
+📌 Parameters:
+begin: Iterator pointing to the start of the range.
+middle: Iterator pointing to the new first element after rotation.
+end: Iterator pointing to the end of the range (exclusive).
+
+int main() {
+    std::vector<int> a = {1, 2, 3, 4, 5};
+    
+    std::rotate(a.begin(), a.begin() + 2, a.end());
+
+    for (int i : a) std::cout << i << " ";
+    return 0;
+}
+
+Before Rotation:
+Index:  0  1  2  3  4
+Array:  1  2  3  4  5
+
+Result:
+3 4 5 1 2
+---------------------------------------------------
+
+🔁 Real Usage Example: Rotate Left by k steps
+std::rotate(a.begin(), a.begin() + k, a.end());
+
+a = {1, 2, 3, 4, 5}, k = 2
+=> {3, 4, 5, 1, 2}
+
+🔁 Rotate Right by k steps
+std::rotate(a.begin(), a.end() - k, a.end());
+
+a = {1, 2, 3, 4, 5}, k = 2
+=> {4, 5, 1, 2, 3}
+
+
+
 vector<int> vec{1, 2, 3, 4};
 int n = vec.size();
 int k = 2;
