@@ -34,8 +34,8 @@ same as normal set.
 
 - Default declarations
 ```c++
-priority_queue<int> pq;                            //creates max-heap
-priority_queue<int, vector<int>> pq;               //creates max-heap
+priority_queue<int> pq;                                    //creates max-heap
+priority_queue<int, vector<int>, greater<int>> pq;        //creates min-heap
 ```
 <br>
 
